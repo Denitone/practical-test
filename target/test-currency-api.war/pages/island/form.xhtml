@@ -1,0 +1,33 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:h="http://java.sun.com/jsf/html" xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:ui="http://java.sun.com/jsf/facelets" xmlns:a4j="http://richfaces.org/a4j"
+      xmlns:p="http://java.sun.com/jsf/html">
+
+<body>
+<ui:composition template="/templates/template.xhtml">
+    <ui:define name="title">TEST MAVEN LAB - NUMBER OF ISLAND</ui:define>
+    <ui:define name="body">
+
+        <H2>DENI SETIAWAN - NUMBER OF ISLAND</H2>
+
+        <h:form prependId="false">
+            <h:outputLabel value="Representation:" for="fromInput"/>
+            <h:inputText id="fromInput" value="#{islandFormCtrl.mx}"/>
+            <br/>
+        </h:form>
+
+        <h:panelGroup id="output">
+            <H3> <h:outputLabel value="Number Of Island: " /> <h:outputLabel value="#{islandFormCtrl.numberOfIsland}"/></H3>
+        </h:panelGroup>
+
+        <BR/>
+        <BR/>
+        <BR/>
+
+        <H2><h:link outcome="/index" value="BACK TO HOME"/></H2>
+
+    </ui:define>
+</ui:composition>
+</body>
+</html>
